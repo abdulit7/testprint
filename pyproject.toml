@@ -7,9 +7,8 @@ authors = [
 ]
 dependencies = [
   "flet==0.28.3",
-  "python-escpos==2.0.0",
-  "DateTime",
-  "pyjnius"                       # 👈 required for Bluetooth (autoclass)
+  "python-escpos==2.2.0",
+  "pyjnius==1.6.1"
 ]
 
 [tool.flet]
@@ -18,7 +17,7 @@ product = "AKBER TIKKA"
 company = "AKBER TIKKA"
 copyright = "Copyright (C) 2025 AKBER TIKKA"
 build_number = 1
-app.module = "main"
+app.module = "test"
 app.path = "."
 app.exclude = ["assets"]
 
@@ -27,9 +26,6 @@ adaptive_icon_background = ""
 split_per_abi = false
 
 [tool.flet.android.permission]
-"android.permission.READ_EXTERNAL_STORAGE" = true
-"android.permission.READ_MEDIA_IMAGES" = true
-"android.permission.WRITE_EXTERNAL_STORAGE" = true
 "android.permission.BLUETOOTH" = true
 "android.permission.BLUETOOTH_ADMIN" = true
 "android.permission.BLUETOOTH_CONNECT" = true
