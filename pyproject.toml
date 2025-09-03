@@ -8,7 +8,8 @@ authors = [
 dependencies = [
   "flet==0.28.3",
   "python-escpos==2.0.0",
-  "DateTime"
+  "DateTime",
+  "pyjnius"                       # 👈 required for Bluetooth (autoclass)
 ]
 
 [tool.flet]
