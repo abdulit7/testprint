@@ -1,0 +1,36 @@
+[project]
+name = "AKBER TIKKA"
+version = "1.0.0"
+description = "Receipt Printing App for AKBER TIKKA"
+authors = [
+  { name = "AKBER TIKKA", email = "info@akbertikka.com" }
+]
+dependencies = [
+  "flet==0.28.3",
+  "python-escpos==2.0.0",
+  "DateTime"
+]
+
+[tool.flet]
+org = "com.akbertikka"
+product = "AKBER TIKKA"
+company = "AKBER TIKKA"
+copyright = "Copyright (C) 2025 AKBER TIKKA"
+build_number = 1
+app.module = "main"
+app.path = "."
+app.exclude = ["assets"]
+
+[tool.flet.android]
+adaptive_icon_background = ""
+split_per_abi = false
+
+[tool.flet.android.permission]
+"android.permission.READ_EXTERNAL_STORAGE" = true
+"android.permission.READ_MEDIA_IMAGES" = true
+"android.permission.WRITE_EXTERNAL_STORAGE" = true
+"android.permission.BLUETOOTH" = true
+"android.permission.BLUETOOTH_ADMIN" = true
+"android.permission.BLUETOOTH_CONNECT" = true
+"android.permission.BLUETOOTH_SCAN" = true
+"android.permission.ACCESS_FINE_LOCATION" = true
