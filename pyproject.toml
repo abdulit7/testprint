@@ -17,7 +17,7 @@ product = "AKBER TIKKA"
 company = "AKBER TIKKA"
 copyright = "Copyright (C) 2025 AKBER TIKKA"
 build_number = 1
-app.module = "test"
+app.module = "main"
 app.path = "."
 app.exclude = ["assets"]
 
